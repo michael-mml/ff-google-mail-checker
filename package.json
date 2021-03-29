@@ -1,0 +1,22 @@
+{
+  "name": "ff-google-mail-checker",
+  "version": "0.0.1",
+  "description": "Opens your Gmail inbox when you click the button.",
+  "main": "background_scripts/google-mail-checker.js",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-plugin-no-unsanitized": "^3.1.4",
+    "web-ext": "^6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "start:firefox:wsl": "web-ext run",
+    "build": "web-ext build",
+    "web-ext:lint": "web-ext lint"
+  },
+  "author": "michael-mml",
+  "repository": "https://gitlab.com/michael-mml/ff-google-mail-checker.git",
+  "license": "GPL-2.0-only",
+  "dependencies": {}
+}
