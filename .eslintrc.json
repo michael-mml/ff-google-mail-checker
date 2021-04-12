@@ -9,6 +9,10 @@
       "plugin:no-unsanitized/DOM"
     ],
     "parserOptions": {
-        "ecmaVersion": 2021
-    }
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "html"
+    ]
 }

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Google Mail Checker for Firefox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opens your Gmail inbox when you click the button.",
   "homepage_url": "https://gitlab.com/michael-mml/ff-google-mail-checker",
   "icons": {
@@ -15,9 +15,7 @@
     "default_title": "Google Mail Checker"
   },
   "background": {
-    "scripts": [
-      "background_scripts/google-mail-checker.js"
-    ]
+    "page": "background_page/google-mail-checker.html"
   },
   "web_accessible_resources": []
 }

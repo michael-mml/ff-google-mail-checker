@@ -1,10 +1,11 @@
 {
   "name": "ff-google-mail-checker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opens your Gmail inbox when you click the button.",
   "main": "background_scripts/google-mail-checker.js",
   "devDependencies": {
     "eslint": "^7.22.0",
+    "eslint-plugin-html": "^6.1.2",
     "eslint-plugin-no-unsanitized": "^3.1.4",
     "web-ext": "^6.0.0"
   },
