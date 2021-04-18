@@ -1,6 +1,6 @@
 {
   "name": "ff-google-mail-checker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Opens your Gmail inbox when you click the button.",
   "main": "background_scripts/google-mail-checker.js",
   "devDependencies": {
