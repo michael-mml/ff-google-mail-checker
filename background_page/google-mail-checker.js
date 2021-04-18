@@ -9,8 +9,7 @@ const onClickIcon = async () => {
   // check if Gmail tab exists already
   let openGmailTabs = [];
   try {
-    console.log(await getOpenGmailTabsInCurrentWindow());
-    openGmailTabs = [...openGmailTabs, ...(await getOpenGmailTabsInCurrentWindow()).flat()];
+    openGmailTabs = [...openGmailTabs, ...(await getOpenGmailTabsInCurrentWindow())];
   } catch (err) {
     console.error(`An error occurred: ${err}`);
     return;

@@ -30,7 +30,6 @@ export const openNewGmailTab = async () => {
     );
   } catch (err) {
     console.error(`An error occurred: ${err}`);
-    return;
   }
 };
 
@@ -46,6 +45,5 @@ export const isCurrentTabInCurrentWindowGmail = async () => {
     return currentTab.active && currentTab.url.includes('mail.google.com');
   } catch (err) {
     console.error(`An error occurred: ${err}`);
-    return;
   }
 };
