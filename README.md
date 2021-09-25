@@ -27,4 +27,12 @@ Requires a Node.js installation on your machine.
 ## Build From Source
 
 1. Clone the repo and run `yarn` to install dependencies.
-2. Run `yarn run build`. The build artifact will appear in `web-ext-artifacts` as a `.zip` file.
+2. Run `yarn run build`. The build artifact will appear in `build/web-ext-artifacts/` as a `.zip` file.
+
+    `yarn run build` does the following:
+
+    1. Creates the `build/` directory
+    2. Compiles the TypeScript source code in `src/`
+    3. Copies `src/` and `manifest.json` to `build/`
+        - this is required to copy non-TypeScript source code (e.g. HTML background page and static assets) and files required to run the extension (e.g. `manifest.json`)
+    4. Calls `web-ext` to build/package the compiled JavaScript into a WebExtension artifact

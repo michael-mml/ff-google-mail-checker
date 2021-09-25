@@ -1,0 +1,30 @@
+{
+    // Forces ESLint to lint src/ files only instead of linting all files including parent (build) directory with compiled JS
+    // Recommended ESLint config for TS: https://github.com/typescript-eslint/typescript-eslint/blob/9aea46abcf867f3512ccb0c182fa3ff8284b3c40/docs/getting-started/linting/README.md
+    "root": true,
+    // Enable support to parse TypeScript
+    // Recommended ESLint config for TS: https://github.com/typescript-eslint/typescript-eslint/blob/9aea46abcf867f3512ccb0c182fa3ff8284b3c40/docs/getting-started/linting/README.md
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true,
+        "es6": true,
+        "webextensions": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:no-unsanitized/DOM",
+      // Recommended ESLint config for TS: https://github.com/typescript-eslint/typescript-eslint/blob/9aea46abcf867f3512ccb0c182fa3ff8284b3c40/docs/getting-started/linting/README.md
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "html",
+        // Recommended ESLint config for TS: https://github.com/typescript-eslint/typescript-eslint/blob/9aea46abcf867f3512ccb0c182fa3ff8284b3c40/docs/getting-started/linting/README.md
+        "@typescript-eslint"
+    ],
+    // ignore compiled JS files in src/
+    "ignorePatterns": ["**/src/**/*.js"]
+}

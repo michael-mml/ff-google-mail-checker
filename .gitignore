@@ -1,3 +1,12 @@
-node_modules
-web-ext-artifacts
+node_modules/
 yarn-error*
+
+# ignore build artifacts from the following:
+# web-ext
+# tsc
+build/
+src/**/*/*.js
+src/**/*/*.js.map
+
+# ignore tsc logs
+tsconfig.tsbuildinfo

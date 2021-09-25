@@ -6,11 +6,11 @@ module.exports = {
   verbose: true,
   ignoreFiles: [
     // remove all files that are not required for running the extension
-    'yarn*',
-    'web-ext*',
-    'package.json',
-    'README*'
+    '**/*/*.ts'
   ],
+  sourceDir: 'build',
+  artifactsDir: 'build/web-ext-artifacts',
+
   // Per-command options
   build: {
     overwriteDest: true,
@@ -18,5 +18,5 @@ module.exports = {
   run: {
     startUrl: ['about:debugging'],
     firefox: '/opt/firefox/firefox'
-  },
+  }
 };
